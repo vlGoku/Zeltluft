@@ -1,0 +1,519 @@
+//Mobile Ansicht 
+
+.heading_produkt {
+    display: grid;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    justify-content: center;
+    animation: fade 1s ease-in;
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.produkte {
+    place-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    animation: fade 1s ease-in;
+}
+
+.haus_beispiele {
+    height: 300px;
+    width: 400px;
+    border: 3px solid black;
+    display: none;
+}
+
+.info_unternehmen {
+    font-size: 1rem;
+}
+
+.info_zwei,
+.info_drei,
+.info_vier {
+    display: none;
+}
+
+.stufen_desktop {
+    display: none;
+}
+
+.stufen_mobile {
+    display: grid;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: fade 1s ease-in;
+    place-content: center;
+}
+
+.bild_stufen {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.ausbauhaus_info {
+    text-align: center;
+}
+
+.aufbaustufen_mobile {
+    place-self: center;
+    font-size: 2rem;
+}
+
+.kleiner_header_stufen {
+    display: block;
+    grid-column: 1;
+    font-size: 1rem;
+    place-self: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ausbauhaus {
+    place-self: center;
+    height: 80%;
+    width: 80%;
+}
+
+.schlusselfertig {
+    place-self: center;
+    height: 80%;
+    width: 80%;
+}
+
+.bezugsfertig {
+    place-self: center;
+    height: 80%;
+    width: 80%;
+}
+
+.ausbauhaus_info {
+    grid-row: 4;
+}
+
+
+.aufbaustufen {
+    font-size: 1rem;
+}
+
+h4 {
+    display: none;
+    font-size: 0.8rem;
+}
+
+.aufbaustufen_liste {
+    font-size: 1rem;
+
+    li {
+        padding: 5px;
+    }
+}
+
+.timeline_aufbau {
+    display: none;
+}
+
+.projektphasen {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: fade 1s ease-in;
+}
+
+.projektphasen_heading1 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.projektphasen_heading {
+    display: none;
+}
+
+.projektphase_liste {
+    font-size: 1rem;
+
+    li {
+        padding: 10px;
+    }
+}
+
+.info_phasen2 {
+    font-size: 1rem;
+    display: block;
+}
+
+.uebergang_galerie {
+    text-align: center;
+    padding: 30px;
+    display: block;
+}
+
+.galerie {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
+    animation: fade ease-in 1s;
+}
+
+.heading_galerie {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bilder_galerie {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.galerie_liste {
+    height: 20px;
+    width: 30px;
+    border: 3px solid black;
+
+    &:hover {
+        transform: scale(200%);
+    }
+}
+
+.w {
+    width: 20px;
+}
+
+.uebergang_kontakt {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 0.7rem;
+    animation: fade ease-in 1s;
+}
+
+.btn {
+    padding-top: 30px;
+}
+
+.btn_angebot {
+    height: 100px;
+    width: 200px;
+    font-size: 2rem;
+
+    &:hover {
+        background-color: peachpuff;
+    }
+}
+
+
+
+//Desktop Ansicht
+
+@media only screen and (min-width: 992px) {
+    .heading_produkt {
+        display: grid;
+        font-size: 3rem;
+        padding-top: 30px;
+        justify-content: center;
+        animation: fade 1s ease-in;
+    }
+
+    .produkte {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        place-items: center;
+        padding-left: 200px;
+        padding-right: 200px;
+        animation: fade 1s ease-in;
+    }
+
+    .haus_beispiele {
+        height: 300px;
+        width: 400px;
+        border: 3px solid black;
+        display: block;
+    }
+
+    .info_unternehmen {
+        font-size: 1.7rem;
+    }
+
+    .info_eins {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .info_zwei {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+        display: block;
+    }
+
+    .info_drei {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        display: block;
+    }
+
+    .info_vier {
+        grid-column: 2 / span 2;
+        grid-row: 4;
+        display: block;
+    }
+
+    .beispiele_first {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .beispiele_second {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .beispiele_third {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .beispiele_fourth {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .stufen_mobile {
+        display: none;
+    }
+
+    .stufen_desktop {
+        padding-top: 0px;
+        padding-left: 200px;
+        padding-right: 200px;
+        animation: fade 1s ease-in;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+
+    .bild_stufen {
+        border: 2px solid black;
+        height: 100%;
+        width: 100%;
+    }
+
+    .ausbauhaus_info {
+        text-align: center;
+    }
+
+    .aufbaustufen {
+        place-self: end center;
+        grid-column: 1;
+        font-size: 2rem;
+        grid-row: 1;
+        grid-column: 1 / span 3;
+    }
+
+    .kleiner_header_stufen {
+        display: block;
+        grid-column: 1;
+        font-size: 1.6rem;
+        place-self: center;
+        text-align: center;
+        grid-row: 2;
+        grid-column: 1 / span 3;
+    }
+
+    .ausbauhaus {
+        place-self: center;
+        height: 80%;
+        width: 80%;
+    }
+
+    .schlusselfertig {
+        place-self: center;
+        height: 80%;
+        width: 80%;
+    }
+
+    .bezugsfertig {
+        place-self: center;
+        height: 80%;
+        width: 80%;
+    }
+
+    .ausbauhaus_info {
+        grid-row: 4;
+    }
+
+    .projektphasen_heading {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .info_phasen {
+        text-align: center;
+    }
+
+    .uebergang_galerie {
+        display: none;
+    }
+
+
+    .galerie {
+        display: block;
+        padding-top: 50px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .heading_galerie {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .bilder_galerie {
+        padding-top: 50px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 100px;
+    }
+
+    .galerie_liste {
+        height: 200px;
+        width: 300px;
+        border: 3px solid black;
+
+        &:hover {
+            transform: scale(200%);
+        }
+    }
+
+    .w {
+        width: 200px;
+    }
+
+    .uebergang_kontakt {
+        text-align: center;
+    }
+
+    .btn {
+        padding-top: 30px;
+    }
+
+    .btn_angebot {
+        height: 100px;
+        width: 200px;
+        font-size: 2rem;
+    }
+
+    .projektphasen {
+        display: none;
+    }
+
+    .projektphasen_heading {
+        display: block;
+    }
+
+    .info_phasen1 {
+        display: none;
+    }
+
+    .timeline_aufbau {
+        display: block;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        animation: fade 1s ease-in;
+    }
+
+    .timeline_header {
+        background-color: peachpuff;
+    }
+
+    .timeline_inhalt {
+        background-color: peachpuff;
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: peachpuff;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: peachpuff;
+        border: 4px solid #FF9F55;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid black;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent peachpuff;
+    }
+
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid black;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent peachpuff transparent transparent;
+    }
+
+    .right::after {
+        left: -16px;
+    }
+
+    .content {
+        padding: 20px 30px;
+        background-color: peachpuff;
+        position: relative;
+        border-radius: 6px;
+    }
+}

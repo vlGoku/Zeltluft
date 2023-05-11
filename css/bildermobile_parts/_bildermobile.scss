@@ -1,0 +1,16 @@
+//Mobile Ansicht 
+
+.bilder_mobil {
+    display: grid;
+    justify-items: center;
+}
+
+.bilder_heading {
+    padding: 20px;
+}
+
+.bilder_mobile {
+    height: 80%;
+    width: 80%;
+    border: 2px solid black;
+}

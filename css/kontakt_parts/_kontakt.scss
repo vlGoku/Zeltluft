@@ -1,0 +1,236 @@
+//Mobile Ansicht
+
+.container_kontakt {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    animation: fade ease-in 1s;
+
+    .kontakt_heading {
+        padding: 20px;
+        font-size: 2rem;
+        background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .kontakt_sub {
+        font-size: 1.5rem;
+    }
+
+    .kontakt_methoden {
+        li {
+            padding: 7px;
+            list-style-type: none;
+        }
+    }
+}
+
+.abstand {
+    display: grid;
+    height: 100px;
+    place-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    animation: fade ease-in 1s;
+}
+
+.container_kontakt_2 {
+    display: grid;
+    place-items: center;
+    padding: 10px 30px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: lightcyan;
+    border: 2px solid black;
+    animation: fade ease-in 1s;
+    background-color: peachpuff;
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+
+
+
+
+    h2,
+    label,
+    input,
+    textarea,
+    form,
+    .btn {
+        background-color: transparent;
+    }
+
+}
+
+.kontakt_heading {
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+}
+
+.standardform {
+    width: 100%;
+    border: 2px solid black;
+    background-color: white;
+}
+
+input[type=text]:focus,
+textarea:focus,
+select:focus {
+    background-color: white;
+    border: 2px solid black;
+}
+
+::placeholder {
+    color: black;
+}
+
+.txtarea {
+    height: 150px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+
+.checkbeschriftung {
+    margin-left: 38px;
+    margin-top: -38px;
+    font-weight: lighter;
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+}
+
+.datenschutzcheck {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+label {
+    font-weight: lighter;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 30%;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.btn {
+    text-align: center;
+}
+
+//Desktop Ansicht
+
+@media only screen and (min-width: 992px) {
+
+    .container_kontakt {
+        display: grid;
+        place-items: center;
+        gap: 10px;
+        padding: 20px;
+
+        .kontakt_heading {
+            font-size: 2rem;
+        }
+
+        .kontakt_sub {
+            font-size: 1.5rem;
+        }
+
+        .kontakt_methoden {
+            li {
+                padding: 7px;
+                list-style-type: none;
+            }
+        }
+    }
+
+    .abstand {
+        display: grid;
+        height: 100px;
+        place-content: center;
+        margin: 20px;
+    }
+
+    .container_kontakt_2 {
+        display: grid;
+        place-items: center;
+        padding: 100px;
+        margin-left: 400px;
+        margin-right: 400px;
+        background-color: peachpuff;
+        border: 2px solid black;
+
+        h2,
+        label,
+        input,
+        textarea,
+        form,
+        .btn {
+            background-color: transparent;
+        }
+    }
+
+    .kontakt_heading {
+        font-size: 2rem;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .standardform {
+        width: 100%;
+        border: 2px solid black;
+        background-color: white;
+    }
+
+    input[type=text]:focus,
+    textarea:focus,
+    select:focus {
+        background-color: #fff;
+        border: 2px solid rgb(16, 216, 42);
+    }
+
+    .txtarea {
+        height: 150px;
+        border: 2px solid black;
+    }
+
+    .checkbeschriftung {
+        margin-left: 38px;
+        margin-top: -38px;
+        font-weight: lighter;
+        color: black;
+    }
+
+    .datenschutzcheck {
+        height: 20px;
+        width: 20px;
+    }
+
+    label {
+        font-weight: lighter;
+    }
+
+    input[type=submit] {
+        background-color: white;
+        color: black;
+        height: 50px;
+        width: 30%;
+        margin-bottom: 0px;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: gray;
+        }
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+}

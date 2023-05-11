@@ -1,0 +1,126 @@
+//Mobile Ansicht
+
+.heading_team {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 50px;
+    animation: fade 1s ease-in;
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container_team {
+    display: grid;
+    padding: 30px;
+    place-items: center;
+    gap: 20px;
+    animation: fade 1s ease-in;
+}
+
+h5 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.beschreibung {
+    font-size: 1.2rem;
+}
+
+.team_image {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+
+
+//Desktop Ansicht
+
+@media only screen and (min-width: 992px) {
+
+    .heading_team {
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 50px;
+        animation: fade 1s ease-in;
+    }
+
+    .container_team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 30px;
+        animation: fade 1s ease-in;
+    }
+
+    h5 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .name_oben {
+        place-self: center;
+    }
+
+    .beschreibung {
+        font-size: 1.7rem;
+    }
+
+    .team_image {
+        border-radius: 100%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .lucas {
+        place-self: center;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .beschreibung_lucas {
+        grid-row: 1;
+        grid-column: 2 / span 2;
+        place-self: center;
+    }
+
+    .marina {
+        grid-row: 2;
+        grid-column: 3;
+        place-self: center;
+    }
+
+    .beschreibung_marina {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+        place-self: center;
+    }
+
+    .jen {
+        place-self: center;
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .beschreibung_jen {
+        grid-row: 3;
+        grid-column: 2 / span 2;
+        place-self: center;
+    }
+
+    .lisa {
+        grid-row: 4;
+        grid-column: 3;
+        place-self: center;
+    }
+
+    .beschreibung_lisa {
+        grid-row: 4;
+        grid-column: 1 / span 2;
+        place-self: center;
+    }
+}

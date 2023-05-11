@@ -1,0 +1,24 @@
+* {
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+}
+
+.oben {
+    padding-top: 120px;
+}
+
+.unten {
+    padding-bottom: 120px;
+}
+
+
+@import "./Header_Footer/footer";
+@import "./Header_Footer/header";
+@import "./startseite_parts/startseite";
+@import "./kontakt_parts/kontakt";
+@import "./produkte_parts/produkte";
+@import "./team_parts/team";
+@import "./aboutus_parts/aboutus";
+@import "./bildermobile_parts/bildermobile";
